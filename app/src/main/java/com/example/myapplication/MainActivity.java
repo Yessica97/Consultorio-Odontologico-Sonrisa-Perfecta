@@ -47,15 +47,15 @@ public class MainActivity extends AppCompatActivity {
         txtxContraseña=findViewById(R.id.pass);
 
         SharedPreferences preferences=getSharedPreferences("Usuarios", Context.MODE_PRIVATE);
-        String usuario=preferences.getString("usuario", "yessica.carrillo@udea.edu.co");
+        String email=preferences.getString("email", "yessica.carrillo@udea.edu.co");
         String contraseña=preferences.getString("contraseña", "yemacare97");
 
         String campoUsuario=txtxUsuario.getText().toString();
         String campoContraseña=txtxContraseña.getText().toString();
-        if(usuario.equals(campoUsuario) && contraseña.equals(campoContraseña)){
+        if(email.equals(campoUsuario) && contraseña.equals(campoContraseña)){
             Intent intent= new Intent(MainActivity.this, HomeActivity.class);
             startActivity(intent);
-        }else if(!(campoUsuario.equals(usuario))){
+        }else if(!(campoUsuario.equals(email))){
             Toast.makeText(getApplicationContext(), "Usuario incorrecto", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(getApplicationContext(), " Contraseña incorrecta", Toast.LENGTH_SHORT).show();
