@@ -11,4 +11,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="titulo_home">CONSULTORIO ODONTOLOGICO SONRISA PERFECTA</string>
     <string name="registro_descripcion">Para realizar su registro correctamente, diligenciar todos los campos.</string>
+    <string name="descripcion_home">Bienvenido a consultorio odontologico sonrisa perfecta, en esta aplicación encontrara todo lo relacionado con los diferentes procedimientos que puedes realizarte con nosotros.</string>
+    <string name="descripcion_dos_home">A continuacion, podras ver diferentes opciones para navegar en nuestra aplicación, sientete comodo de elegir la que mas se adapte a tu necesidad, te atenderemos con gusto.</string>
 </resources>

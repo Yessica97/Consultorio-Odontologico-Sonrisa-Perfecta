@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/blanco">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:src="@drawable/home" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blanco"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_home"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/negro"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_dos_home"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/negro"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Registro de usuarios"
+            android:id="@+id/btn_registro_usuarios"
+            android:background="@color/azul"
+            android:layout_marginTop="10dp"
+            android:onClick="pantallaRegistro"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Lista de procedimientos"
+            android:id="@+id/btn_lista_procedimientos"
+            android:background="@color/azul"
+            android:layout_marginTop="10dp"
+            android:onClick="pantallaLista"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Agendar cita"
+            android:id="@+id/btn_agendar_cita"
+            android:background="@color/azul"
+            android:layout_marginTop="10dp"
+            android:onClick="pantallaAgendar"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/btn_logout"
+            android:background="@color/azul"
+            android:layout_marginTop="10dp"
+            android:onClick="pantallaLogin"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
