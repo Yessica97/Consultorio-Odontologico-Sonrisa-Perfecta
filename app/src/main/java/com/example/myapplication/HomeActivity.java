@@ -15,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void pantallaRegistro(View view) {
-        Intent intent=new Intent(HomeActivity.this, RegistroActivity.class);
+        Intent intent=new Intent(HomeActivity.this, RegistroUsuariosActivity.class);
         startActivity(intent);
     }
 

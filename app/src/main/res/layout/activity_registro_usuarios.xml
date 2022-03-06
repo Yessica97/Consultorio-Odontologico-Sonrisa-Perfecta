@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroUsuariosActivity"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/blanco"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/registro_paciente"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_descripcion"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/negro"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese nombres"
+                    android:inputType="text"
+                    android:id="@+id/txt_nombre"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo Identificación:"
+                android:textSize="15dp"
+                android:textColor="@color/negro"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cedula"
+                    android:text="Cedula de Ciudadanía"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pasaporte"
+                    android:text="Tarjeta de Identidad"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/extranjeria"
+                    android:text="Tarjeta de Extranjería"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese nº identificación"
+                    android:inputType="number"
+                    android:id="@+id/txt_numero_identificacion"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de Nacimiento:"
+                    android:textSize="15dp"
+                    android:textColor="@color/negro"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Día"
+                            android:inputType="number"
+                            android:id="@+id/txt_dia"
+                            android:layout_marginBottom="20dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Mes"
+                            android:inputType="number"
+                            android:id="@+id/txt_mes"
+                            android:layout_marginBottom="20dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Año"
+                            android:inputType="number"
+                            android:id="@+id/txt_año"
+                            android:layout_marginBottom="20dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genero:"
+                android:textSize="15dp"
+                android:textColor="@color/negro"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lista_genero"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado Civil:"
+                android:textSize="15dp"
+                android:textColor="@color/negro"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soltero"
+                    android:text="Soltero"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/casado"
+                    android:text="Casado"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/divorciado"
+                    android:text="Divorciado"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/viudo"
+                    android:text="Viudo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Dirección Residencia"
+                    android:inputType="text"
+                    android:id="@+id/txt_direccion"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ocupación"
+                    android:inputType="text"
+                    android:id="@+id/txt_ocupacion"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nivel Escolaridad:"
+                android:textSize="15dp"
+                android:textColor="@color/negro"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/no_bachiller"
+                    android:text="No Bachiller"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bachiller"
+                    android:text="Bachiller"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tecnico_tecnologo"
+                    android:text="Técnico o Tecnólogo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/universitario"
+                    android:text="Universitario"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/postgrado"
+                    android:text="Postgrado"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese email"
+                    android:inputType="text"
+                    android:id="@+id/txt_email"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EPS:"
+                android:textSize="15dp"
+                android:textColor="@color/negro"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/salud_vida"
+                    android:text="Salud Vida"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/savia_salud"
+                    android:text="Savia Salud"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cruz_blanca"
+                    android:text="Cruz Blanca"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cafesalud"
+                    android:text="Cafesalud"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/famisanar"
+                    android:text="Famisanar"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coomeva"
+                    android:text="Coomeva"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saludcoop"
+                    android:text="SaludCoop"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sura"
+                    android:text="Sura"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nueva_eps"
+                    android:text="Nueva eps"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Contacto de Emergencia"
+                    android:inputType="text"
+                    android:id="@+id/txt_nombre_emergencia"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Télefono Contacto de Emergencia"
+                    android:inputType="number"
+                    android:id="@+id/txt_telefono_emergencia"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Parentesco"
+                    android:inputType="text"
+                    android:id="@+id/txt_parentesco"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tratamiento a realizar:"
+                android:textSize="15dp"
+                android:textColor="@color/negro"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/frenos_dentales"
+                    android:text="Frenos Dentales"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/puentes_implantes"
+                    android:text="Puentes e Implantes"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coronas"
+                    android:text="Coronas"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/extracciones"
+                    android:text="Extracciones"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carrillas_dentales"
+                    android:text="Carrilas Dentales"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/protesis_dentales"
+                    android:text="Prótesis Dentales"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/empastes_reparaciones"
+                    android:text="Empastes y Reparaciones"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cirugia_encias"
+                    android:text="Cirugía de Encías"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selladores"
+                    android:text="Selladores"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blanqueamiento_dental"
+                    android:text="Blanqueamiento Dental"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:hint="Antecedentes Médicos"
+                android:background="@color/gris_claro"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:layout_gravity="center"
+                android:id="@+id/btn_registro"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/azul"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
