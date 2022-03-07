@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaProcedimientosActivity"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/blanco">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/prueba_dos"/>
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:background="@color/blanco">
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Frenos Dentales"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/frenos_dentales"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Desde $3.900.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/frenos_dentales_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Puentes e Implantes"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/puentes"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="$800.000 por puente"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/puentes_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Coronas"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Coronas"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Desde $280.000 a $350.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/coronas_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Extracciones"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Extracciones"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Desde $120.000 a $440.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/extracciones_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Carillas Dentales"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Carillas_Dentales"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Desde $1.000.000 a $1.600.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/carrillas_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Prótesis Dentales"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Prótesis_Dentales"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="$300.000 por 5 dientes"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/protesis_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Empaste y Reparaciones"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Empaste_Reparaciones"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="$100.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/empaste_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Cirugía de Encías"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Cirugía_Encías"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Desde $500.000 a $800.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/encias_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Selladores"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Selladores"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="$30.000 por diente"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/selladores_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          NOMBRE          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="DESCRIPCIÓN"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Blanqueamiento Dental"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/Blanqueamiento_Dental"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="          COSTO          "
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:background="@color/gris"/>
+                    <TextView
+                        android:text="CUIDADOS ESPECIALES"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Desde $300.000 a $500.000"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="@string/blanqueamiento_cuidados"
+                        android:gravity="center"
+                        android:padding="3dip"
+                        android:layout_margin="5dp"
+                        android:background="@color/gris_claro"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

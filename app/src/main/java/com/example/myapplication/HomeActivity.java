@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void pantallaLista(View view) {
-        Intent intent=new Intent(HomeActivity.this, RegistroActivity.class);
+        Intent intent=new Intent(HomeActivity.this, ListaProcedimientosActivity.class);
         startActivity(intent);
     }
 
