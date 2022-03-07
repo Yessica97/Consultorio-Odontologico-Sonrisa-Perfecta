@@ -25,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void pantallaAgendar(View view) {
-        Intent intent=new Intent(HomeActivity.this, RegistroActivity.class);
+        Intent intent=new Intent(HomeActivity.this, AgendarCitaActivity.class);
         startActivity(intent);
     }
 

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgendarCitaActivity"
+    android:orientation="vertical"
+    android:background="@color/blanco">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/blanco"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:src="@drawable/agenda_cita"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agendar_descripcion"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/negro"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese nombres"
+                    android:inputType="text"
+                    android:id="@+id/txt_nombre"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese nº identificación"
+                    android:inputType="number"
+                    android:id="@+id/txt_numero_identificacion"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese Nª Telefono"
+                    android:inputType="number"
+                    android:id="@+id/txt_telefono_emergencia"
+                    android:layout_marginBottom="20dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+             <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha Cita:"
+                    android:textSize="15dp"
+                    android:textColor="@color/negro"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Día"
+                            android:inputType="number"
+                            android:id="@+id/txt_dia"
+                            android:layout_marginBottom="20dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Mes"
+                            android:inputType="number"
+                            android:id="@+id/txt_mes"
+                            android:layout_marginBottom="20dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Año"
+                            android:inputType="number"
+                            android:id="@+id/txt_año"
+                            android:layout_marginBottom="20dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:hint="Ingrese Procedimiento"
+                android:background="@color/gris_claro"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agendar"
+                android:layout_gravity="center"
+                android:id="@+id/btn_registro"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/azul"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

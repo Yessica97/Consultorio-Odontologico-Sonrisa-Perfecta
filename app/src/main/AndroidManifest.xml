@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/icono_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaProcedimientosActivity"
+        <activity android:name=".AgendarCitaActivity"
+            android:label="AGENDAR CITA">
+
+        </activity>
+        <activity
+            android:name=".ListaProcedimientosActivity"
             android:label="LISTA PROCEDIMIENTOS">
 
         </activity>
