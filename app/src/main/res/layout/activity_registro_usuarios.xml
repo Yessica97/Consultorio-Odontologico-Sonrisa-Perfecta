@@ -499,7 +499,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/carrillas_dentales"
-                    android:text="Carrilas Dentales"
+                    android:text="Carillas Dentales"
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="20dp"/>
 
