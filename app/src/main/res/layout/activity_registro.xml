@@ -80,20 +80,13 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
+            <EditText
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="380dp"
-                    android:layout_height="wrap_content"
-                    android:hint="Ingrese contraseña"
-                    android:inputType="text"
-                    android:id="@+id/txt_contraseña"
-                    android:layout_marginBottom="20dp"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Ingrese contraseña"
+                android:inputType="text"
+                android:id="@+id/txt_contraseña"
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:layout_width="100dp"

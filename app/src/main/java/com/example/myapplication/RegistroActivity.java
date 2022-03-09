@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -18,7 +19,8 @@ import java.util.regex.Pattern;
 
 public class RegistroActivity extends AppCompatActivity {
 
-    TextInputEditText contraseña, email, nombres, apellido;
+    TextInputEditText email, nombres, apellido;
+    EditText contraseña;
     Button registrarse;
 
     @Override
