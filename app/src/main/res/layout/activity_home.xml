@@ -44,7 +44,8 @@
             android:id="@+id/btn_registro_usuarios"
             android:background="@color/azul"
             android:layout_marginTop="10dp"
-            android:onClick="pantallaRegistro"/>
+            android:onClick="pantallaRegistro"
+            android:layout_gravity="center"/>
 
         <Button
             android:layout_width="300dp"
@@ -53,7 +54,8 @@
             android:id="@+id/btn_lista_procedimientos"
             android:background="@color/azul"
             android:layout_marginTop="10dp"
-            android:onClick="pantallaLista"/>
+            android:onClick="pantallaLista"
+            android:layout_gravity="center"/>
 
         <Button
             android:layout_width="300dp"
@@ -62,7 +64,8 @@
             android:id="@+id/btn_agendar_cita"
             android:background="@color/azul"
             android:layout_marginTop="10dp"
-            android:onClick="pantallaAgendar"/>
+            android:onClick="pantallaAgendar"
+            android:layout_gravity="center"/>
 
         <Button
             android:layout_width="300dp"
@@ -71,7 +74,8 @@
             android:id="@+id/btn_logout"
             android:background="@color/azul"
             android:layout_marginTop="10dp"
-            android:onClick="pantallaLogin"/>
+            android:onClick="pantallaLogin"
+            android:layout_gravity="center"/>
 
 
     </LinearLayout>
